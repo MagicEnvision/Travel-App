@@ -36,7 +36,7 @@ body {
   }
 
   .padding-container {
-    @apply px-6 lg:px-20 2xl:px-0;
+    @apply px-12 lg:px-20 2xl:px-0;
   }
 
   .flexCenter {
