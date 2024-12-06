@@ -2,6 +2,11 @@ import { FEATURES } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
 
+interface FeatureItemProps {
+  title: string;
+}
+
+
 const Features = () => {
   return (
 <section className='border-2 border-red-500 flexCenter flex-col overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24'>
@@ -36,7 +41,7 @@ const Features = () => {
 </section>  )
 }
 
-const FeatureItem = ({title}) => {
+const FeatureItem = ({title}: FeatureItemProps) => {
   return (
     <div>
       {title}
